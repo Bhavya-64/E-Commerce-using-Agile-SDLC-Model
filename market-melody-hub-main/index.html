@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Prompt</title>
+</head>
+<body>
+    <script>
+        // Prompt the user with a message
+        const userResponse = prompt("Do you want to visit our eCommerce store?", "Yes");
+
+        // Check if the user clicked "OK" and entered "Yes"
+        if (userResponse && userResponse.toLowerCase() === "yes") {
+            // Redirect to the eCommerce site
+            window.location.href = "https://ecommerce.mywpsite.org/";
+        } else {
+            alert("You chose not to visit the store.");
+        }
+    </script>
+</body>
+</html>
